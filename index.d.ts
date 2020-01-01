@@ -62,3 +62,5 @@ export interface FieldPacket extends mysql.FieldPacket {
 export function createConnection(connectionUri: string): Connection;
 export function createConnection(config: ConnectionOptions): Connection;
 export function createPool(config: PoolOptions): Pool;
+
+export { Connection as PromiseConnection, Pool as PromisePool, PoolConnection as PromisePoolConnection } from './promise';
